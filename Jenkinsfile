@@ -1,17 +1,21 @@
 pipeline {
-	agent any
+    agent any
 
-	stages {
-		stage('One') {
-			steps {
-				echo 'Hello from jenkinsfile'
-			}
-		}
-			
-		stage('Two') {
-			steps {
-				echo 'Hello#2 from jenkinsfile'
-			}
-		}
-	}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
