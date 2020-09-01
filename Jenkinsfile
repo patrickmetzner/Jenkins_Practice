@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo 'Stage Two - step 1'
 				echo 'Stage Two - step 2'
+				echo 'Stage Two - step 3'
             }
         }
     }
