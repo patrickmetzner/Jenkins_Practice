@@ -3,7 +3,15 @@ pipeline {
     stages {
         stage('One') {
             steps {
-                echo 'Hello from Jenkinsfile'
+                echo 'Stage One - step 1'
+				echo 'Stage One - step 2'
+            }
+        }
+		
+		stage('Two') {
+            steps {
+                echo 'Stage Two - step 1'
+				echo 'Stage Two - step 2'
             }
         }
     }
